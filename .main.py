@@ -2,11 +2,11 @@ from kivy.app import App
 from kivy.uix.button import Button
 import plyer
 
-class techsnap(App):
+class Myapp(App):
     def build(self):
-        return Button(text='press to explore techsnap', on_press=self.notify)
+        return Button(text='press to explore my app', on_press=self.notify)
 
     def notify(self, obj):
-        plyer.notification.notify(title="techsnap", messsage="welcome To techsnap")
+        plyer.notification.notify(title="application", messsage="welcome To My app")
 
-techsnap().run()
+Myapp().run()
